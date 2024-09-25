@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="emi.css">
+    <link rel="icon" href="/Users/soumil/Desktop/Web Development (Mern Stack) /assignment /Fc.png" type="image/icon type">
+</head>
+<body>
+    <h2>EMI Calculator</h2>
+    <form>
+        <!-- Image inside form -->
+        <img src="emi.jpg" alt="EMI Image" class="form-image">
+
+        <label for="emi-loan-amount">Loan Amount (₹):</label>
+        <input type="number" id="emi-loan-amount" value="500000">
+        
+        <label for="emi-tenure">Tenure (years):</label>
+        <input type="number" id="emi-tenure" value="5">
+        
+        <label for="emi-interest-rate">Interest Rate (%):</label>
+        <input type="number" id="emi-interest-rate" value="10">
+        
+        <button type="button" onclick="calculateEMI()">Calculate</button>
+        
+        <!-- Separate result fields for each value -->
+        <p><strong>Principal Amount:</strong> ₹<span id="principalAmount">0</span></p>
+        <p><strong>Monthly EMI:</strong> ₹<span id="monthlyEMI">0</span></p>
+        <p><strong>Total Interest Payable:</strong> ₹<span id="totalInterest">0</span></p>
+        <p><strong>Total Amount Payable:</strong> ₹<span id="totalAmountPayable">0</span></p>
+        <button type="button" onclick="window.location.href='index.html'">Home</button>
+        <br>
+        <h3>Also Check Out These Calculators Below &darr;</h3>
+        <button type="button" onclick="window.location.href='sip.html'">SIP Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='MutualFund.html'">Mutual Fund Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='fd.html'">Fixed Deposit Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='rd.html'">Recurring Deposit Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='IT.html'">Income Tax Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='gst.html'">GST Calculator</button>
+        <br>
+    </form>
+    <h1>What is EMI (Equated Monthly Installment)?</h1>
+    <p>An EMI (Equated Monthly Installment) is a fixed payment made by a borrower to a lender at a specified date each calendar month. It is used to pay off both interest and principal every month so that over a specified number of years, the loan is paid off in full. EMIs are commonly used for personal loans, home loans, auto loans, and other types of loans.</p>
+    
+    <h2>How EMI Works:</h2>
+    <ul>
+        <li><strong>Loan Amount (Principal):</strong> This is the total money borrowed from the lender.</li>
+        <li><strong>Interest Rate:</strong> The lender charges an interest on the loan, which is a percentage of the principal amount.</li>
+        <li><strong>Loan Tenure:</strong> This is the duration over which the loan is to be repaid.</li>
+    </ul>
+    <p>The EMI is calculated using a formula that incorporates the principal, interest rate, and tenure. The EMI amount remains the same throughout the loan tenure, but the proportion of interest and principal repayment changes with each EMI. Initially, the interest component is higher, and the principal is lower. As the loan progresses, the interest component decreases while the principal increases.</p>
+
+    <h3>EMI Formula:</h3>
+    <p><strong>EMI = [ P x r x (1 + r)<sup>n</sup> ] / [ (1 + r)<sup>n</sup> - 1 ]</strong></p>
+    <ul>
+        <li><strong>P:</strong> Principal loan amount</li>
+        <li><strong>r:</strong> Monthly interest rate</li>
+        <li><strong>n:</strong> Number of monthly installments (tenure in months)</li>
+    </ul>
+
+    <h2>Helpfulness of EMI:</h2>
+    <ul>
+        <li><strong>Budgeting:</strong> EMI allows individuals to plan their finances as it provides a clear idea of how much needs to be paid monthly.</li>
+        <li><strong>Affordability:</strong> It makes expensive items more accessible by breaking down the total payment into manageable monthly installments.</li>
+        <li><strong>Credit Building:</strong> Timely EMI payments can help build a good credit history, which is beneficial for future borrowing.</li>
+    </ul>
+
+    <h2>Advantages of EMI:</h2>
+    <ul>
+        <li><strong>Fixed Payments:</strong> Since the EMI amount is fixed, it helps borrowers to manage their finances without unexpected increases.</li>
+        <li><strong>Affordability:</strong> It allows people to purchase expensive items or take loans without paying the entire amount upfront.</li>
+        <li><strong>Flexibility in Tenure:</strong> Lenders usually provide flexibility in choosing the loan tenure. Shorter tenures result in higher EMIs, while longer tenures lead to lower EMIs.</li>
+        <li><strong>Prepayment Options:</strong> Some lenders allow prepayment of loans, which reduces the overall interest burden.</li>
+    </ul>
+
+    <h2>Disadvantages of EMI:</h2>
+    <ul>
+        <li><strong>Interest Cost:</strong> The total amount paid over time includes significant interest, which increases the overall cost of the item or loan.</li>
+        <li><strong>Long-term Commitment:</strong> Taking a loan with EMI locks you into long-term financial commitments, reducing flexibility in future spending.</li>
+        <li><strong>Credit Impact:</strong> Missing EMI payments can negatively affect your credit score and lead to penalties.</li>
+        <li><strong>Higher Total Payments:</strong> Especially with longer loan tenures, while monthly payments are smaller, the overall amount paid (including interest) can be much higher than the actual principal.</li>
+    </ul>
+    <script src="emi.js"></script>
+</body>
+</html>

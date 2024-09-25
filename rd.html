@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurring Deposit Calculator </title>
+    <link rel="stylesheet" href="rd.css">
+    <link rel="icon" href="/Users/soumil/Desktop/Web Development (Mern Stack) /assignment /Fc.png" type="image/icon type">
+</head>
+<body>
+    <script src="rd.js"></script>
+    <h2>Recurring Deposit Calculator</h2>
+    <form>
+        <img src="rd.jpg" alt="RD Image" class="form-image">
+        <label for="rd-monthly-investment">Monthly Investment (₹):</label>
+        <input type="number" id="rd-monthly-investment" value="1000">
+        
+        <label for="rd-tenure">Tenure (years):</label>
+        <input type="number" id="rd-tenure" value="5">
+        
+        <label for="rd-interest">Interest Rate (%):</label>
+        <input type="number" id="rd-interest" value="8">
+        
+        <button type="button" onclick="calculateRD()">Calculate</button>
+    
+    
+    <!-- Results Section -->
+    <p><strong>Invested Amount:</strong> ₹<span id="totalInvestment">0</span></p>
+    <p><strong>Estimated Return:</strong> ₹<span id="estimatedReturns">0</span></p>
+    <p><strong>Total Value (Maturity Amount):</strong> ₹<span id="maturityAmount">0</span></p>
+    <button type="button" onclick="window.location.href='index.html'">Home</button>
+    <br>
+    <h3>Also Check Out These Calculators Below &darr;</h3>
+    <button type="button" onclick="window.location.href='sip.html'">SIP Calculator</button>
+    <br>
+    <button type="button" onclick="window.location.href='emi.html'">EMI Calculator</button>
+    <button type="button" onclick="window.location.href='fd.html'">Fixed Deposit Calculator</button>
+    <br>
+    <button type="button" onclick="window.location.href='MutualFund.html'">Mutual Fund Calculator</button>
+    <br>
+    <button type="button" onclick="window.location.href='IT.html'">Income Tax Calculator</button>
+    <br>
+    <button type="button" onclick="window.location.href='gst.html'">GST Calculator</button>
+    <br>
+</form>
+            <h1>What is a Recurring Deposit?</h1>
+    <p>A Recurring Deposit (RD) is a financial instrument offered by banks and financial institutions that allows individuals to deposit a fixed amount regularly (usually monthly) for a predetermined period. At the end of the tenure, the investor receives the principal amount along with the interest earned.</p>
+        
+    <h2>How to Use a Recurring Deposit</h2>
+    <ul>
+        <li><strong>Choose a Bank or Financial Institution:</strong> Select a bank or NBFC that offers competitive interest rates and favorable terms.</li>
+        <li><strong>Decide the Monthly Deposit and Tenure:</strong> Determine the amount you want to deposit each month and the duration of the RD, which can range from 6 months to 10 years.</li>
+        <li><strong>Open an RD Account:</strong> You can open an RD account online through net banking or by visiting the branch.</li>
+        <li><strong>Make Regular Deposits:</strong> Ensure you deposit the fixed amount every month. This can be automated through standing instructions to your bank.</li>
+        <li><strong>Receive Maturity Amount:</strong> At the end of the tenure, you will receive the total amount deposited along with the interest earned.</li>
+    </ul>
+
+    <h2>How Recurring Deposits Can Be Helpful</h2>
+    <ul>
+        <li><strong>Disciplined Savings:</strong> RDs encourage regular savings by requiring fixed monthly deposits.</li>
+        <li><strong>Guaranteed Returns:</strong> The interest rate is fixed at the time of opening the RD, ensuring predictable returns.</li>
+        <li><strong>Low Risk:</strong> RDs are not subject to market risks, making them a safe investment option.</li>
+        <li><strong>Flexibility:</strong> You can choose the deposit amount and tenure based on your financial goals.</li>
+    </ul>
+
+    <h2>Formula to Determine RD Maturity Amount</h2>
+    <div class="formula">
+        <p><strong>Formula:</strong> A = P × ((1 + r/n)<sup>nt</sup> - 1) / (1 - (1 + r/n)<sup>-1/n</sup>)</p>
+        <ul>
+            <li><strong>A:</strong> Maturity amount</li>
+            <li><strong>P:</strong> Monthly deposit</li>
+            <li><strong>r:</strong> Annual interest rate (in decimal)</li>
+            <li><strong>n:</strong> Number of times interest is compounded per year</li>
+            <li><strong>t:</strong> Number of years</li>
+        </ul>
+    </div>
+
+    <h2>Advantages of Recurring Deposits</h2>
+    <div class="advantages">
+        <ul>
+            <li><strong>Disciplined Savings:</strong> Encourages regular savings habits.</li>
+            <li><strong>Guaranteed Returns:</strong> Fixed interest rates ensure predictable returns.</li>
+            <li><strong>Low Risk:</strong> Safe investment option with no market risk.</li>
+            <li><strong>Flexible Tenure:</strong> Choose the tenure that suits your financial goals.</li>
+            <li><strong>Loan Facility:</strong> Some banks offer loans against your RD.</li>
+        </ul>
+    </div>
+
+    <h2>Disadvantages of Recurring Deposits</h2>
+    <div class="disadvantages">
+        <ul>
+            <li><strong>Lower Returns:</strong> Compared to other investment options like mutual funds or stocks, RDs generally offer lower returns.</li>
+            <li><strong>Inflation Risk:</strong> The fixed interest rate may not keep up with inflation, reducing the real value of your returns.</li>
+            <li><strong>Penalty on Premature Withdrawal:</strong> Withdrawing your RD before maturity can result in penalties and reduced interest.</li>
+            <li><strong>Taxable Interest:</strong> Interest earned on RDs is taxable, which can reduce your net returns.</li>
+        </ul>
+    </div>
+
+    <b><p>Recurring Deposits can be a great way to build a disciplined savings habit while earning guaranteed returns.</p></b>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Form Container */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #c1d1e0;
+    font-family: 'Arial', sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.form-image {
+    display: block;
+    margin: 0 auto 25px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-image:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Label Styling */
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #2d3e50;
+    font-weight: 600;
+}
+
+/* Input Field Styling */
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #d1dce8;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.2);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 91, 181, 0.2);
+}
+
+/* Paragraph and Result Text Styling */
+p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2d3e50;
+    text-align: center;
+}
+
+/* Result Span Styling */
+p span {
+    font-size: 20px;
+    color: #0066cc;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Additional Hover Effect for Form */
+form:hover {
+    box-shadow: 0 8px 30px rgba(0, 102, 204, 0.2);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposit Calculator</title>
+    <link rel="stylesheet" href="fd.css">
+    <link rel="icon" href="/Users/soumil/Desktop/Web Development (Mern Stack) /assignment /Fc.png" type="image/icon type">
+</head>
+<body>
+    
+    <script src="fd.js"></script>
+    <h2>Fixed Deposit Calculator</h2>
+    <form>
+        <img src="fd.jpg" alt="FD Image" class="form-image">
+        <label for="fd-principal">Principal Amount (₹):</label>
+        <input type="number" id="fd-principal" value="10000">
+        
+        <label for="fd-tenure">Tenure (years):</label>
+        <input type="number" id="fd-tenure" value="2">
+        
+        <label for="fd-interest">Interest Rate (%):</label>
+        <input type="number" id="fd-interest" value="7">
+        
+        <button type="button" onclick="calculateFD()">Calculate</button>
+
+        <p><strong>Invested Amount:</strong> ₹<span id="invested-amount">0</span></p>
+        <p><strong>Estimated Return:</strong> ₹<span id="estimated-return">0</span></p>
+        <p><strong>Total Value (Maturity Amount):</strong> ₹<span id="fd-result">0</span></p>
+        <button type="button" onclick="window.location.href='index.html'">Home</button>
+        <br>
+        <h3>Also Check Out These Calculators Below &darr;</h3>
+        <button type="button" onclick="window.location.href='sip.html'">SIP Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='emi.html'">EMI Calculator</button>
+        <button type="button" onclick="window.location.href='MutualFund.html'">Mutual Fund Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='rd.html'">Recurring Deposit Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='IT.html'">Income Tax Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='gst.html'">GST Calculator</button>
+        <br>
+    </form>
+            <h1>What is a Fixed Deposit?</h1>
+            <p>A Fixed Deposit (FD) is a financial instrument provided by banks and Non-Banking Financial Companies (NBFCs) </p>
+        <p>where you can deposit a lump sum amount for a fixed tenure at a predetermined interest rate.</p>
+        <p> The interest rate is usually higher than that of a regular savings account, and the returns are guaranteed.</p>
+
+        <h2>How to Use a Fixed Deposit</h2>
+    <ul>
+        <li><strong>Choose a Bank or NBFC:</strong> Select a financial institution that offers competitive interest rates and favorable terms.</li>
+        <li><strong>Decide the Amount and Tenure:</strong> Determine how much money you want to deposit and for how long. The tenure can range from 7 days to 10 years.</li>
+        <li><strong>Open an FD Account:</strong> You can open an FD account online through net banking or by visiting the branch.</li>
+        <li><strong>Deposit the Money:</strong> Transfer the amount you wish to invest into the FD account.</li>
+        <li><strong>Receive Interest:</strong> Interest can be received periodically (monthly, quarterly, annually) or at maturity, depending on your preference.</li>
+    </ul>
+
+    <h2>How Fixed Deposits Can Be Helpful</h2>
+    <ul>
+        <li><strong>Safety:</strong> FDs are considered a safe investment as they offer guaranteed returns and are not affected by market fluctuations.</li>
+        <li><strong>Predictable Returns:</strong> You know exactly how much you will earn at the end of the tenure.</li>
+        <li><strong>Tax Benefits:</strong> Certain FDs offer tax benefits under Section 80C of the Income Tax Act.</li>
+        <li><strong>Loan Facility:</strong> You can avail loans against your FD, which can be useful in emergencies.</li>
+    </ul>
+
+    <h2>Formula to Determine FD Maturity Amount</h2>
+    <div class="formula">
+        <p><strong>Formula:</strong> A = P (1 + r/n)<sup>nt</sup></p>
+        <ul>
+            <li><strong>A:</strong> Maturity amount</li>
+            <li><strong>P:</strong> Principal amount (initial deposit)</li>
+            <li><strong>r:</strong> Annual interest rate (in decimal)</li>
+            <li><strong>n:</strong> Number of times interest is compounded per year</li>
+            <li><strong>t:</strong> Number of years</li>
+        </ul>
+    </div>
+
+    <h2>Advantages of Fixed Deposits</h2>
+    <div class="advantages">
+        <ul>
+            <li><strong>Guaranteed Returns:</strong> Fixed interest rates ensure you receive the promised returns.</li>
+            <li><strong>Low Risk:</strong> FDs are not subject to market risks, making them a safe investment.</li>
+            <li><strong>Flexible Tenure:</strong> You can choose the tenure that suits your financial goals.</li>
+            <li><strong>Loan Facility:</strong> Easy to get loans against your FD.</li>
+            <li><strong>Tax Benefits:</strong> Certain FDs offer tax deductions under Section 80C.</li>
+        </ul>
+
+        <h2>Disadvantages of Fixed Deposits</h2>
+        <div class="disadvantages">
+            <ul>
+                <li><strong>Lower Returns:</strong> Compared to other investment options like mutual funds or stocks, FDs generally offer lower returns.</li>
+                <li><strong>Inflation Risk:</strong> The fixed interest rate may not keep up with inflation, reducing the real value of your returns.</li>
+                <li><strong>Penalty on Premature Withdrawal:</strong> Withdrawing your FD before maturity can result in penalties and reduced interest.</li>
+                <li><strong>Taxable Interest:</strong> Interest earned on FDs is taxable, which can reduce your net returns.</li>
+            </ul>
+        </div>
+        <h2>Disadvantages of Fixed Deposits</h2>
+        <div class="disadvantages">
+            <ul>
+                <li><strong>Lower Returns:</strong> Compared to other investment options like mutual funds or stocks, FDs generally offer lower returns.</li>
+                <li><strong>Inflation Risk:</strong> The fixed interest rate may not keep up with inflation, reducing the real value of your returns.</li>
+                <li><strong>Penalty on Premature Withdrawal:</strong> Withdrawing your FD before maturity can result in penalties and reduced interest.</li>
+                <li><strong>Taxable Interest:</strong> Interest earned on FDs is taxable, which can reduce your net returns.</li>
+            </ul>
+        </div>
+        <b><p>Fixed Deposits can be a reliable and straightforward investment option, especially for risk-averse investors looking for guaranteed returns.</p></b>
+</body>
+</html>

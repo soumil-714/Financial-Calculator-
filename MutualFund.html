@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund Calculator</title>
+    <link rel="stylesheet" href="MutualFund.css">
+    <link rel="icon" href="/Users/soumil/Desktop/Web Development (Mern Stack) /assignment /Fc.png" type="image/icon type">
+</head>
+<body>
+    <h2>Mutual Fund Calculator</h2>
+    <form>
+        <!-- Image inside form -->
+        <img src="MutualFund.jpg" alt="Mutual Fund Image" class="form-image">
+        
+        <label for="mf-investment">Monthly Investment (₹):</label>
+        <input type="number" id="mf-investment" value="1000">
+        
+        <label for="mf-tenure">Tenure (years):</label>
+        <input type="number" id="mf-tenure" value="5">
+        
+        <label for="mf-interest">Interest Rate (%):</label>
+        <input type="number" id="mf-interest" value="12">
+        
+        <button type="button" onclick="calculateMutualFund()">Calculate</button>
+        
+        <!-- Display results in separate fields -->
+        <p><strong>Invested Amount:</strong> ₹<span id="investedAmount">0</span></p>
+        <p><strong>Estimated Returns:</strong> ₹<span id="estimatedReturns">0</span></p>
+        <p><strong>Total Value (Maturity Amount):</strong> ₹<span id="maturityAmount">0</span></p>
+        <button type="button" onclick="window.location.href='index.html'">Home</button>
+        <br>
+        <h3>Also Check Out These Calculators Below &darr;</h3>
+        <button type="button" onclick="window.location.href='sip.html'">SIP Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='emi.html'">EMI Calculator</button>
+        <button type="button" onclick="window.location.href='fd.html'">Fixed Deposit Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='rd.html'">Recurring Deposit Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='IT.html'">Income Tax Calculator</button>
+        <br>
+        <button type="button" onclick="window.location.href='gst.html'">GST Calculator</button>
+        <br>
+    </form>
+
+    <script src="MutualFund.js"></script>
+
+    <h1>What is a Mutual Fund?</h1>
+    <p>A mutual fund is a type of investment vehicle that pools money from multiple investors to purchase a diversified
+ <p>portfolio of securities, such as stocks, bonds, or other assets.</p>
+<p> These funds are managed by professional portfolio managers who aim to achieve specific investment objectives.</p>
+
+<h2>How to Use a Mutual Fund</h2>
+<ul>
+    <li><strong>Determine Your Investment Goals:</strong> Identify your financial goals, risk tolerance, and investment horizon.</li>
+    <li><strong>Choose the Right Type of Mutual Fund:</strong> There are various types of mutual funds, such as equity funds, debt funds, hybrid funds, and index funds. Select one that aligns with your goals.</li>
+    <li><strong>Open an Account:</strong> You can invest in mutual funds through a brokerage account, directly with the fund company, or via online investment platforms.</li>
+    <li><strong>Invest Regularly:</strong> Consider setting up a Systematic Investment Plan (SIP) to invest a fixed amount regularly, which helps in averaging the cost of investment.</li>
+    <li><strong>Monitor Your Investment:</strong> Keep track of your mutual fund’s performance and make adjustments as needed to stay aligned with your goals.</li>
+</ul>
+
+<h2>How Mutual Funds Can Be Helpful</h2>
+    <ul>
+        <li><strong>Diversification:</strong> Mutual funds invest in a variety of securities, reducing the risk associated with investing in a single asset.</li>
+        <li><strong>Professional Management:</strong> Fund managers handle the research, selection, and management of the fund’s assets, which can be beneficial for investors who lack the time or expertise.</li>
+        <li><strong>Liquidity:</strong> Most mutual funds offer high liquidity, allowing you to buy or sell your shares on any business day.</li>
+        <li><strong>Accessibility:</strong> Mutual funds are accessible to investors with varying amounts of capital, making it easy to start investing with a relatively small amount.</li>
+    </ul>
+
+<h2>Advantages of Mutual Funds</h2>
+    <div class="advantages">
+        <ul>
+            <li><strong>Diversification:</strong> Reduces risk by spreading investments across various assets.</li>
+            <li><strong>Professional Management:</strong> Experienced fund managers make investment decisions on your behalf.</li>
+            <li><strong>Liquidity:</strong> Easy to buy and sell shares.</li>
+            <li><strong>Convenience:</strong> Simplifies the investment process.</li>
+            <li><strong>Economies of Scale:</strong> Lower transaction costs due to bulk buying.</li>
+        </ul>
+    </div>
+
+    <h2>Disadvantages of Mutual Funds</h2>
+    <div class="disadvantages">
+        <ul>
+            <li><strong>Fees and Expenses:</strong> Management fees and other expenses can reduce your returns.</li>
+            <li><strong>Lack of Control:</strong> Investors have no say in the individual securities chosen.</li>
+            <li><strong>Tax Inefficiency:</strong> Capital gains distributions can lead to tax liabilities.</li>
+            <li><strong>Potential for Over-Diversification:</strong> Too much diversification can dilute returns.</li>
+            <li><strong>Performance Variability:</strong> Fund performance can vary based on the manager’s decisions.</li>
+        </ul>
+    </div>
+
+
+    <p>Mutual funds can be a valuable tool for achieving your financial goals, but it’s essential to understand both their benefits and drawbacks to make informed investment decisions.</p>
+</body>
+</html>

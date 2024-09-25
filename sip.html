@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="sip.css">
+    <link rel="icon" href="/Users/soumil/Desktop/Web Development (Mern Stack) /assignment /Fc.png" type="image/icon type">
+</head>
+<body>
+    <script src="sip.js"></script>
+    <h2>SIP Calculator</h2>
+    <form>
+         <!-- Image inside form -->
+         <img src="sip.jpg" alt="SIP Image" class="form-image">
+         
+         <label for="sip-investment">Monthly Investment (₹):</label>
+         <input type="number" id="sip-investment" value="1000">
+         
+         <label for="sip-tenure">Tenure (years):</label>
+         <input type="number" id="sip-tenure" value="5">
+         
+         <label for="sip-interest">Interest Rate (%):</label>
+         <input type="number" id="sip-interest" value="10">
+         
+         <button type="button" onclick="calculateSIP()">Calculate</button>
+         
+         <!-- Display results directly in separate fields -->
+         <p><strong>Invested Amount:</strong> ₹<span id="totalInvestment">0</span></p>
+         <p><strong>Estimated Return:</strong> ₹<span id="estimatedReturns">0</span></p>
+         <p><strong>Total Value (Maturity Amount):</strong> ₹<span id="maturityAmount">0</span></p>
+         <button type="button" onclick="window.location.href='index.html'">Home</button>
+         <br>
+         <h3>Also Check Out These Calculators Below &darr;</h3>
+         <button type="button" onclick="window.location.href='emi.html'">EMI Calculator</button>
+         <br>
+         <button type="button" onclick="window.location.href='MutualFund.html'">Mutual Fund Calculator</button>
+         <br>
+         <button type="button" onclick="window.location.href='fd.html'">Fixed Deposit Calculator</button>
+         <br>
+         <button type="button" onclick="window.location.href='rd.html'">Recurring Deposit Calculator</button>
+         <br>
+         <button type="button" onclick="window.location.href='IT.html'">Income Tax Calculator</button>
+         <br>
+         <button type="button" onclick="window.location.href='gst.html'">GST Calculator</button>
+         <br>
+    </form>
+
+
+    <h2>What is SIP?</h2>
+    <p>A <b>Systematic Investment Plan (SIP)</b> is a method of investing in mutual funds where a fixed sum is invested at regular intervals, typically monthly or quarterly.</p>
+
+    <h2>How SIP Works:</h2>
+    <p>When you invest through SIP, you buy units of a mutual fund at different price points based on the market's performance. Over time, this helps you accumulate units at an average price, known as <b>rupee cost averaging</b>.</p>
+
+    <h2>Benefits of SIP:</h2>
+    <ol>
+        <li><b>Start Small:</b> SIP allows you to invest with as little as ₹500 per month, making it accessible for beginners and those with limited capital.</li>
+        <li><b>Long-Term Wealth Creation:</b> Regular, disciplined investing over a long period allows you to build significant wealth, taking advantage of the power of compounding.</li>
+        <li><b>No Need to Time the Market:</b> SIPs eliminate the stress of trying to predict market movements, as investments are made automatically over time.</li>
+    </ol>
+
+    <h2>Example of SIP Growth:</h2>
+    <p>Suppose you invest ₹1,000 per month in an equity mutual fund with an average annual return of 12%. Over 10 years, your total investment of ₹1,20,000 could grow to over ₹2,30,000 due to compounding and consistent market returns.</p>
+
+    <h2>Disadvantages to Consider:</h2>
+    <ul>
+        <li><b>Market Dependency:</b> While SIP reduces volatility, it doesn’t remove the inherent risks associated with equity markets.</li>
+        <li><b>Low Flexibility in Returns:</b> Returns may be lower during poor market conditions, and the growth can vary depending on market performance.</li>
+    </ul>
+   <p>SIP is a great tool for long-term financial planning, especially for those who want to benefit from disciplined investing without needing to time the market.</p>
+
+</body>
+</html>

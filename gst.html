@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="gst.css">
+    <link rel="icon" href="/Users/soumil/Desktop/Web Development (Mern Stack) /assignment /Fc.png" type="image/icon type">
+
+</head>
+<body>
+    <script src="gst.js"></script>
+    <h2>GST Calculator</h2>
+            <form>
+                <img src="GST.jpg" alt="GST Image" class="form-image">
+                <label for="gst-amount">Amount:</label>
+                <input type="number" id="gst-amount" value="1000">
+                <label for="gst-rate">GST Rate (%):</label>
+                <input type="number" id="gst-rate" value="18">
+                <button type="button" onclick="calculateGST()">Calculate</button>
+                <p id="gst-result"></p>
+                <button type="button" onclick="window.location.href='index.html'">Home</button>
+                <br>
+                <h3>Also Check Out These Calculators Below &darr;</h3>
+                <button type="button" onclick="window.location.href='sip.html'">SIP Calculator</button>
+                <br>
+                <button type="button" onclick="window.location.href='emi.html'">EMI Calculator</button>
+                <button type="button" onclick="window.location.href='fd.html'">Fixed Deposit Calculator</button>
+                <br>
+                <button type="button" onclick="window.location.href='MutualFund.html'">Mutual Fund Calculator</button>
+                <br>
+                <button type="button" onclick="window.location.href='rd.html'">Recurring Deposit Calculator</button>
+                <br>
+                <button type="button" onclick="window.location.href='IT.html'">Income Tax Calculator</button>
+                <br>
+                </form>
+            </form>
+            <h1>What is GST?</h1>
+    <p>The Goods and Services Tax (GST) is a comprehensive indirect tax levied on the manufacture, sale, and consumption of goods and services across India. It was introduced on July 1, 2017, to replace multiple indirect taxes like VAT, service tax, and excise duty, aiming to create a unified tax structure.</p>
+
+    <h2>How GST Works</h2>
+    <p>GST is a destination-based tax, meaning it is collected at the point of consumption. It is divided into three types:</p>
+    <ul>
+        <li><strong>CGST (Central GST):</strong> Collected by the Central Government on intra-state sales.</li>
+        <li><strong>SGST (State GST):</strong> Collected by the State Government on intra-state sales.</li>
+        <li><strong>IGST (Integrated GST):</strong> Collected by the Central Government on inter-state sales.</li>
+    </ul>
+
+    <h2>How GST is Helpful</h2>
+    <ul>
+        <li><strong>Eliminates Cascading Effect:</strong> GST removes the “tax on tax” effect, reducing the overall tax burden on goods and services.</li>
+        <li><strong>Simplifies Tax Structure:</strong> It consolidates multiple indirect taxes into a single tax, making compliance easier.</li>
+        <li><strong>Boosts Revenue:</strong> By broadening the tax base and improving compliance, GST helps increase government revenue.</li>
+        <li><strong>Promotes Transparency:</strong> The online system for GST registration and return filing enhances transparency and reduces corruption.</li>
+        <li><strong>Encourages Competitive Pricing:</strong> Uniform tax rates across states lead to competitive pricing and reduce the cost of goods.</li>
+    </ul>
+
+    <h2>Formula to Determine GST</h2>
+    <div class="formula">
+        <p>The formula to calculate GST is:</p>
+        <p><strong>GST Amount = Original Cost × (GST Rate / 100)</strong></p>
+        <p><strong>Example:</strong> If the original cost of a product is ₹1,000 and the GST rate is 18%, the GST amount would be:</p>
+        <p><strong>GST Amount = ₹1,000 × (18 / 100) = ₹180</strong></p>
+    </div>
+
+    <h2>Advantages of GST</h2>
+    <div class="advantages">
+        <ul>
+            <li><strong>Unified Tax System:</strong> Simplifies the tax regime by merging various indirect taxes.</li>
+            <li><strong>Higher Threshold for Registration:</strong> Small businesses with a turnover below ₹20 lakh are exempt from GST.</li>
+            <li><strong>Composition Scheme:</strong> Small businesses can opt for a composition scheme to pay lower taxes.</li>
+            <li><strong>Reduced Compliance:</strong> Fewer tax filings and simplified procedures.</li>
+            <li><strong>Boosts Export:</strong> GST eliminates the taxes on exports, making Indian goods more competitive in the global market.</li>
+        </ul>
+    </div>
+
+    <h2>Disadvantages of GST</h2>
+    <div class="disadvantages">
+        <ul>
+            <li><strong>Increased Operational Costs:</strong> Businesses may need to invest in new software and training.</li>
+            <li><strong>Compliance Burden:</strong> Small businesses may find it challenging to comply with GST regulations.</li>
+            <li><strong>Higher Tax Rates for Some Services:</strong> Certain services may see an increase in tax rates.</li>
+            <li><strong>Initial Implementation Issues:</strong> The transition to GST faced initial challenges and confusion.</li>
+            <li><strong>Impact on Working Capital:</strong> Businesses need to manage their working capital efficiently due to the input tax credit mechanism.</li>
+        </ul>
+    </div>
+        </section>
+        
+    </main>
+    <h3>How Financial Calculators Help</h3>
+    <ul>
+        <li><strong>Simplifies Complex Calculations:</strong> Automates and simplifies complex formulas like interest calculations, tax estimates, and investment returns.</li>
+        <li><strong>Aids Financial Planning:</strong> Helps users plan their finances by calculating expected returns, tax liabilities, and loan repayments.</li>
+        <li><strong>Instant Results:</strong> Provides real-time results based on input values, allowing you to adjust your financial plans instantly.</li>
+    </ul>
+
+    <h3>Advantages of Using Financial Calculators</h3>
+    <ul>
+        <li><strong>Accuracy:</strong> Minimizes errors by automating the calculations.</li>
+        <li><strong>Time-Saving:</strong> Saves time compared to manual computations, especially for repetitive tasks.</li>
+        <li><strong>Ease of Use:</strong> Simple interfaces make it easy for anyone to calculate complex financial figures.</li>
+        <li><strong>Versatility:</strong> Can be used for a wide range of financial tasks, from investment planning to calculating taxes and loan EMIs.</li>
+        <li><strong>Informed Decision-Making:</strong> Helps you make smart, data-driven financial decisions based on accurate calculations.</li>
+    </ul>
+</body>
+</html>
